@@ -15,7 +15,6 @@ const path = require("path")
 
 dotenv.config()
 
-app.use(cors())
 app.use(express.json())
 app.use("/images", express.static(path.join(__dirname, "/images")))
 
@@ -40,6 +39,8 @@ const upload = multer({ storage: storage })
 app.post('/api/upload', upload.single("file"), (req, res) => {
     res.status(200).json('Arquivo inserido!')
 })
+
+app.use(cors())
 app.use('/api/auth', authRoute)
 app.use('/api/users', userRoute)
 app.use('/api/posts', postRoute)
