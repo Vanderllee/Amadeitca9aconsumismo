@@ -2,8 +2,8 @@
 import { Link } from 'react-router-dom'
 import React, { useContext, useRef, useState } from 'react';
 import './login.css'
-import axios from 'axios';
 import { Context } from '../../context/Context';
+
 
 import Loader from "react-loader-spinner";
 
@@ -64,7 +64,6 @@ export default function Login() {
             color="#FF0075"
             height={220}
             width={220}
-            timeout={4000} 
           />
         </div>)
         : (<div className="login">
