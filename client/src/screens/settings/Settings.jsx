@@ -8,7 +8,7 @@ import './settings.css'
 export default function Settings() {
 
     const { user, dispatch } = useContext( Context )
-    const PF = 'http://localhost:5000/images/'
+    const PF = 'https://amadei9aconsumismo.herokuapp.com/images/'
 
     const [ file, setFile ] = useState(null);
     const [ username, setUsername ] = useState('');

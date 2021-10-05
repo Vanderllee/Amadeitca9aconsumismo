@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Post ({ post}) {
 
-    const PF="https://amadeitca9aconsumismo.herokuapp.com/images/";
+    const PF="https://amadei9aconsumismo.herokuapp.com/images/";
  
     console.log(PF + post.photo)
     return (

@@ -18,7 +18,7 @@ export default function Singlepost() {
     const [ desc, setDesc ] = useState('')
     const [ updateMode, setUpdateMode ] = useState(false)
 
-    const PF="http://localhost:5000/images/"
+    const PF="https://amadei9aconsumismo.herokuapp.com/images/"
  
 
     useEffect(() => {

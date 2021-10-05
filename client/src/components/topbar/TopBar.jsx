@@ -7,7 +7,7 @@ export default function TopBar() {
 
     const { user, dispatch } = useContext( Context )
 
-    const PF = 'http://localhost:5000/images/'
+    const PF = 'https://amadei9aconsumismo.herokuapp.com/images/'
 
     const handleLogout = () => {
 
